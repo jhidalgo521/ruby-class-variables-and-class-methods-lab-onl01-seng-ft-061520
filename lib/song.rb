@@ -43,7 +43,18 @@ class Song
   end 
   
   def self.artist_count
+    artist_count = {}
+    @@artists.each do |art| 
     
+      if artist_count[art] #if it includes itself 
+        artist_count[art]+= 1 # plus and assign 1 count 
+    
+      else #if its new just 1 
+        artist_count[art] = 1 
+      end 
+    end
+    artist_count
+  end 
   
   
   
