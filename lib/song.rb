@@ -1,3 +1,5 @@
+require 'pry'
+
 
 class Song 
   
@@ -56,7 +58,7 @@ class Song
     artist_count
   end 
   
-  
+  binding.pry 
   
 end 
   
